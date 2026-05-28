@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah Kebudayaan Islam Kelas X – HISTOVERSE</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Tambahan CSS khusus untuk halaman belajar */
+        .lms-container {
+            min-height: 100vh;
+            display: flex;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .lms-sidebar {
+            width: 300px;
+            background: var(--white);
+            padding: 2rem;
+            border-right: 1px solid var(--bg-secondary);
+            overflow-y: auto;
+            position: sticky;
+            top: 80px;
+            height: calc(100vh - 80px);
+        }
+
+        .lms-content {
+            flex: 1;
+            padding: 2rem;
+            overflow-y: auto;
+        }
+
+        .lms-header {
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--white);
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .bab-item {
+            margin-bottom: 1rem;
+            padding: 1rem;
+            background: var(--bg-secondary);
+            border-radius: 10px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+        }
+
+        .bab-item:hover,
+        .bab-item.active {
+            background: var(--primary);
+            color: var(--white);
+            border-color: var(--secondary);
+        }
+
+        .subbab-item {
+            margin-left: 1.5rem;
+            padding: 0.8rem;
+            background: transparent;
+            font-size: 0.95rem;
+        }
+
+        .content-area {
+            background: var(--white);
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            min-height: 60vh;
+        }
+
+        .content-placeholder {
+            background: var(--bg-secondary);
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--primary);
+        }
+
+        @media (max-width: 768px) {
+            .lms-container {
+                flex-direction: column;
+            }
+            
+            .lms-sidebar {
+                position: static;
+                height: auto;
+                width: 100%;
+                order: 2;
+            }
+            
+            .lms-content {
+                order: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header LMS -->
+    <header class="lms-header">
+        <h1>Sejarah Kebudayaan Islam Kelas X</h1>
+        <p>Perkembangan Islam – HISTOVERSE</p>
+        <p>Pembelajaran ini membahas perkembangan Islam sejak masa Rasulullah SAW di Makkah dan Madinah, hingga masa Khulafaur Rasyidin dan Daulah Umayyah. Materi mencakup kondisi masyarakat sebelum Islam, strategi dakwah, serta perkembangan peradaban Islam.</p>
+        <a href="index.html" class="btn-primary" style="margin-top: 1rem; display: inline-block;">← Kembali ke Beranda</a>
+    </header>
+
+    <div class="lms-container">
+        <!-- Sidebar - Daftar Bab -->
+        <aside class="lms-sidebar" id="sidebar">
+            <h3>Daftar Materi</h3>
+            
+            <!-- BAB 1 -->
+            <div class="bab-item active" data-bab="1">
+                <strong>Bab 1: Perkembangan Islam Masa Rasulullah SAW Periode Makkah</strong>
+                <div class="subbab-item" data-subbab="1.1">1.1 Kebudayaan Masyarakat Makkah Sebelum Islam</div>
+                <div class="subbab-item" data-subbab="1.2">1.2 Substansi dan Strategi Dakwah Rasulullah SAW Periode Makkah</div>
+                <div class="subbab-item" data-subbab="1.3">1.3 Peristiwa-peristiwa Penting dalam Dakwah Rasulullah SAW Periode Makkah</div>
+            </div>
+
+            <!-- BAB 2 -->
+            <div class="bab-item" data-bab="2">
+                <strong>Bab 2: Perkembangan Islam Masa Rasulullah SAW Periode Madinah</strong>
+                <div class="subbab-item" data-subbab="2.1">2.1 Kebudayaan dan Kondisi Masyarakat Madinah Sebelum Islam</div>
+                <div class="subbab-item" data-subbab="2.2">2.2 Substansi dan Strategi Dakwah Rasulullah SAW Periode Madinah</div>
+                <div class="subbab-item" data-subbab="2.3">2.3 Peristiwa-peristiwa Penting dalam Dakwah Rasulullah SAW Periode Madinah</div>
+            </div>
+
+            <!-- BAB 3 -->
+            <div class="bab-item" data-bab="3">
+                <strong>Bab 3: Penaklukan Kota Makkah (Fathu Makkah)</strong>
+                <div class="subbab-item" data-subbab="3.1">3.1 Sebab-sebab Terjadinya Fathu Makkah</div>
+                <div class="subbab-item" data-subbab="3.2">3.2 Faktor-faktor Keberhasilan Fathu Makkah</div>
+                <div class="subbab-item" data-subbab="3.3">3.3 Haji Wada'</div>
+            </div>
+
+            <!-- BAB 4 -->
+            <div class="bab-item" data-bab="4">
+                <strong>Bab 4: Perkembangan Islam Masa Khulafaur Rasyidin</strong>
+                <div class="subbab-item" data-subbab="4.1">4.1 Khalifah Abu Bakar As-Shiddiq</div>
+                <div class="subbab-item" data-subbab="4.2">4.2 Khalifah Umar bin Khattab</div>
+                <div class="subbab-item" data-subbab="4.3">4.3 Khalifah Utsman bin Affan</div>
+                <div class="subbab-item" data-subbab="4.4">4.4 Khalifah Ali bin Abi Thalib</div>
+            </div>
+
+            <!-- BAB 5 -->
+            <div class="bab-item" data-bab="5">
+                <strong>Bab 5: Peradaban Islam Daulah Umayyah di Damaskus</strong>
+                <div class="subbab-item" data-subbab="5.1">5.1 Sejarah Lahirnya Daulah Umayyah di Damaskus</div>
+                <div class="subbab-item" data-subbab="5.2">5.2 Khalifah-khalifah Berprestasi Daulah Umayyah di Damaskus</div>
+                <div class="subbab-item" data-subbab="5.3">5.3 Perkembangan Peradaban dan Ilmu Pengetahuan</div>
+                <div class="subbab-item" data-subbab="5.4">5.4 Kemunduran Daulah Umayyah di Damaskus</div>
+            </div>
+
+            <!-- BAB 6 -->
+            <div class="bab-item" data-bab="6">
+                <strong>Bab 6: Peradaban Islam Daulah Umayyah di Andalusia</strong>
+                <div class="subbab-item" data-subbab="6.1">6.1 Sejarah Lahirnya Daulah Umayyah di Andalusia</div>
+                <div class="subbab-item" data-subbab="6.2">6.2 Perkembangan Peradaban dan Ilmu Pengetahuan</div>
+                <div class="subbab-item" data-subbab="6.3">6.3 Kemunduran Daulah Umayyah di Andalusia</div>
+            </div>
+        </aside>
+
+        <!-- Area Konten Utama -->
+        <main class="lms-content">
+            <div class="content-area" id="content-area">
+                <!-- Konten akan dimuat di sini via JavaScript -->
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // ========================================
+        // LMS NAVIGATION SYSTEM
+        // ========================================
+        document.addEventListener('DOMContentLoaded', function() {
+            loadInitialContent();
+            initLMSNavigation();
+        });
+
+        function initLMSNavigation() {
+            // Event listener untuk bab dan subbab
+            document.querySelectorAll('.bab-item, .subbab-item').forEach(item => {
+                item.addEventListener('click', function() {
+                    const bab = this.dataset.bab || this.closest('.bab-item').dataset.bab;
+                    loadContent(bab);
+                    
+                    // Update active state
+                    document.querySelectorAll('.bab-item').forEach(b => b.classList.remove('active'));
+                    if (this.dataset.bab) {
+                        this.classList.add('active');
+                    } else {
+                        this.closest('.bab-item').classList.add('active');
+                    }
+                });
+            });
+        }
+
+        function loadInitialContent() {
+            loadContent('1');
+        }
+
+        function loadContent(babNumber) {
+            const contentArea = document.getElementById('content-area');
+            const contents = {
+                '1': getBab1Content(),
+                '2': getBab2Content(),
+                '3': getBab3Content(),
+                '4': getBab4Content(),
+                '5': getBab5Content(),
+                '6': getBab6Content()
+            };
+            
+            contentArea.innerHTML = contents[babNumber] || '<div class="content-placeholder">Pilih bab materi untuk memulai pembelajaran</div>';
+        }
+
+        // ========================================
+        // ISI KONTEN SETIAP BAB (PLACEHOLDER)
+        // ========================================
+        function getBab1Content() {
+            return `
+                <div class="content-placeholder">
+                    <h2>Bab 1: Perkembangan Islam Masa Rasulullah SAW Periode Makkah</h2>
+                    <p><strong>Ringkasan:</strong> Membahas kondisi masyarakat Arab sebelum Islam (masa jahiliyah) yang ditandai dengan penyembahan berhala, kehidupan sosial yang bebas, serta budaya seperti berdagang, bersyair, dan menjunjung kehormatan suku. Selain itu dijelaskan strategi dakwah Rasulullah SAW di Makkah yang dilakukan secara sembunyi-sembunyi dan terang-terangan, serta berbagai peristiwa penting seperti hijrah ke Habasyah dan penolakan kaum Quraisy terhadap dakwah Islam.</p>
+                    
+                    <div style="margin: 2rem 0;">
+                        <img src="https://i.ibb.co.com/1YWspr3B/unnamed-bab-1.png" alt="Kebudayaan Masyarakat Makkah Sebelum Islam" style="max-width:100%; border-radius:10px;">
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📹 Video Pembelajaran</h3>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/INgXVNFWmH0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📝 Kuis Interaktif</h3>
+                        <a href="https://forms.gle/oKsBVARUxe2HvimPA" target="_blank" class="btn-primary" style="display:inline-block; margin-top:1rem;">Mulai Kuis Bab 1</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getBab2Content() {
+            return `
+                <div class="content-placeholder">
+                    <h2>Bab 2: Perkembangan Islam Masa Rasulullah SAW Periode Madinah</h2>
+                    <p><strong>Ringkasan:</strong> Menjelaskan kondisi masyarakat Madinah sebelum Islam yang terdiri dari berbagai suku dan agama. Rasulullah SAW membangun masyarakat Islam melalui strategi dakwah seperti mempersaudarakan kaum Muhajirin dan Anshar, membangun masjid, serta menyusun Piagam Madinah sebagai dasar kehidupan bernegara. Selain itu dibahas juga peristiwa penting dalam dakwah di Madinah.</p>
+                    
+                    <div style="margin: 2rem 0;">
+                        <img src="https://i.ibb.co.com/TB5pCyw9/unnamed-1.png" alt="Kebudayaan dan Kondisi Masyarakat Madinah Sebelum Islam" style="max-width:100%; border-radius:10px;">
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📹 Video Pembelajaran</h3>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/fCuFFKLJWSI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📝 Kuis Interaktif</h3>
+                        <a href="https://forms.gle/aXKZkWKhznP94i9XA" target="_blank" class="btn-primary" style="display:inline-block; margin-top:1rem;">Mulai Kuis Bab 2</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getBab3Content() {
+            return `
+                <div class="content-placeholder">
+                    <h2>Bab 3: Penaklukan Kota Makkah (Fathu Makkah)</h2>
+                    <p><strong>Ringkasan:</strong> Menguraikan peristiwa Fathu Makkah yang terjadi karena pelanggaran perjanjian oleh kaum Quraisy. Keberhasilan penaklukan ini didukung oleh kekuatan umat Islam dan strategi yang matang. Peristiwa ini menunjukkan sikap pemaaf Rasulullah SAW serta nilai perdamaian. Selain itu dibahas juga peristiwa Haji Wada' sebagai penyempurna dakwah beliau.</p>
+                    
+                    <div style="margin: 2rem 0;">
+                        <img src="https://i.ibb.co.com/ymwmSsx2/unnamed.png" alt="Fathu Makkah" style="max-width:100%; border-radius:10px;">
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📹 Video Pembelajaran</h3>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/Xl_ROJYofT0" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📝 Kuis Interaktif</h3>
+                        <a href="https://forms.gle/yrQCSzpqF9R5ArrK6" target="_blank" class="btn-primary" style="display:inline-block; margin-top:1rem;">Mulai Kuis Bab 3</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getBab4Content() {
+            return `
+                <div class="content-placeholder">
+                    <h2>Bab 4: Perkembangan Islam Masa Khulafaur Rasyidin</h2>
+                    <p><strong>Ringkasan:</strong> Membahas masa Khulafaur Rasyidin yang terdiri dari Abu Bakar, Umar, Utsman, dan Ali. Pada masa ini terjadi penguatan pemerintahan Islam, perluasan wilayah, pengumpulan Al-Qur'an, serta berbagai kebijakan penting. Kepemimpinan mereka menjadi teladan dalam keadilan, musyawarah, dan tanggung jawab.</p>
+                    
+                    <div style="margin: 2rem 0;">
+                        <img src="https://i.ibb.co.com/kVtnnqSp/unnamed-9.png" alt="Khalifah Abu Bakar As-Shiddiq" style="max-width:100%; border-radius:10px;">
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📹 Video Pembelajaran</h3>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/3WNUMLwLZlc" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📝 Kuis Interaktif</h3>
+                        <a href="https://forms.gle/zmtqH5Y3CEjTZGUT6" target="_blank" class="btn-primary" style="display:inline-block; margin-top:1rem;">Mulai Kuis Bab 4</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getBab5Content() {
+            return `
+                <div class="content-placeholder">
+                    <h2>Bab 5: Peradaban Islam Daulah Umayyah di Damaskus</h2>
+                    <p><strong>Ringkasan:</strong> Menjelaskan berdirinya Daulah Umayyah di Damaskus yang dipimpin oleh Muawiyah bin Abi Sufyan. Pada masa ini terjadi perkembangan pesat dalam bidang pemerintahan, militer, dan ilmu pengetahuan. Selain itu dibahas juga tokoh-tokoh khalifah berprestasi serta faktor kemunduran Daulah Umayyah.</p>
+                    
+                    <div style="margin: 2rem 0;">
+                        <img src="https://i.ibb.co.com/DPw7v7Lq/unnamed-3.png" alt="Sejarah Lahirnya Daulah Umayyah di Damaskus" style="max-width:100%; border-radius:10px;">
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📹 Video Pembelajaran</h3>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/xKnCzoewHZM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📝 Kuis Interaktif</h3>
+                        <a href="https://forms.gle/asCZXcYeec7R2czr6" target="_blank" class="btn-primary" style="display:inline-block; margin-top:1rem;">Mulai Kuis Bab 5</a>
+                    </div>
+                </div>
+            `;
+        }
+
+        function getBab6Content() {
+            return `
+                <div class="content-placeholder">
+                    <h2>Bab 6: Peradaban Islam Daulah Umayyah di Andalusia</h2>
+                    <p><strong>Ringkasan:</strong> Membahas Daulah Umayyah di Andalusia yang membawa kemajuan besar dalam bidang ilmu pengetahuan, arsitektur, dan budaya di Eropa. Peradaban Islam berkembang pesat dan memberikan pengaruh besar bagi dunia Barat. Selain itu dijelaskan juga faktor kemunduran kekuasaan Islam di Andalusia.</p>
+                    
+                    <div style="margin: 2rem 0;">
+                        <img src="https://i.ibb.co.com/DHMLppZr/unnamed-2.png" alt="Sejarah Lahirnya Daulah Umayyah di Andalusia" style="max-width:100%; border-radius:10px;">
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📹 Video Pembelajaran</h3>
+                        <iframe width="100%" height="315" src="https://www.youtube.com/embed/BB2mrfQyMhM" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    
+                    <div class="content-placeholder">
+                        <h3>📝 Kuis Interaktif</h3>
+                        <a href="https://forms.gle/CnGC71M825cUuvTQ9" target="_blank" class="btn-primary" style="display:inline-block; margin-top:1rem;">Mulai Kuis Bab 6</a>
+                    </div>
+                </div>
+            `;
+        }
+    </script>
+</body>
+</html>
